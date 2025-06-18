@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# One World Quest Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Currently, two official plugins are available:
+Welcome to the official repository for One World Quest (OWQ's) website. This repository contains all the source code, assets, and documentation for our public-facing website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Contributing](#contributing)
+- [Project Structure](#project-structure)
+- [License](#license)
+- [Contact](#contact)
 
-## Expanding the ESLint configuration
+## Technologies Used
+- **Frontend**: [React/HTML/CSS/JavaScript]
+- **Styling**: [CSS]
+- **Build Tools**: [Vite]
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
+### Prerequisites
+- Node.js v22+
+- npm v10+
+### Installation
+1. Clone repository:
+```git clone https://github.com/OneWorldQuest/OWQ-Website.git```
+3. Navigate to project directory
+```cd OWQ-Website.git```
+5. Install dependencies
+```npm install```
+4. Start dev server
+```npm run dev```
+the site should now be running at http://localhost:5173
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Contributing
+We welcome contributions from our team members. Please follow these steps:
+1. Create a new feature branch (```git checkout -b YourName-AssociatedTask-IterationNumber```)
+2. Add a change in the working directory to the staging area (```git add .```)
+3. Commit your changes (```git commit -m 'Information about your changes'```)
+4. Push to the branch (```git push```)
+5. Open a pull request on GitHub
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+*¡DO NOT PUSH TO MAIN!*
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Project Structure
+> OWQ-Website/  
+> ├── public/            # Static files \
+> ├── src/               # Source code \
+> │   ├── assets/        # Images, fonts, etc. \
+> │   └── App.tsx        # Main application component \
+> ├── .gitignore         # Git ignore rules \
+> ├── package.json       # Project dependencies \
+> ├── README.md          # This file \
+> └── LICENSE            # License information \
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/OneWorldQuest/OWQ-Website?tab=MIT-1-ov-file) file for details.
+
+## Contact
+For questions about the repository, please contact:
+* Noah Larchick - [noah@oneworldquest.org]
+* Himaja Ryali - [himaja@oneworldquest.org]

@@ -4,7 +4,7 @@
 
 Welcome to the official repository for One World Quest (OWQ's) website. This repository contains all the source code, assets, and documentation for our public-facing website.
 
-## Table of Contents
+## Table of Contents 📓
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)

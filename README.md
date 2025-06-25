@@ -62,3 +62,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 For questions about the repository, please contact:
 * Noah Larchick - [noah@oneworldquest.org]
 * Himaja Ryali - [himaja@oneworldquest.org]
+* Vijay Kumar Reddy - [vijay@oneworldquest.org]

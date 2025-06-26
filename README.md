@@ -64,3 +64,4 @@ For questions about the repository, please contact:
 * Himaja Ryali - [himaja@oneworldquest.org]
 * Vijay Kumar Reddy - [vijay@oneworldquest.org]
 * Enrrique Perez Alvarez - [enrrique@oneworldquest.org]
+* Yash Khot - [yash@oneworldquest.org]

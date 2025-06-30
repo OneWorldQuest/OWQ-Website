@@ -19,10 +19,3 @@ jobs:
               with:
                 milestone: "Frontend Development (Sprint 1)"
                 github-token: ${{ secrets.GITHUB_TOKEN }}
-
-            - name: Add to default project
-              uses: actions-ecosystem/action-add-to-project@v1
-              with:
-                project-url: "https://github.com/orgs/OneWorldQuest/projects/3"
-                column-name: "Open To Start 🕒"
-                github-token: ${{ secrets.GITHUB_TOKEN }}

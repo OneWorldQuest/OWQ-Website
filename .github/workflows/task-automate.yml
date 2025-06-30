@@ -1,0 +1,28 @@
+name: "Task Configuration Automation"
+on:
+    issues:
+        types: [opened, reopened]
+
+jobs:
+    auto-configure:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Add default label
+              uses: actions-ecosystem/action-add-labels@v1
+              with:
+                labels: "task"
+                github-token: ${{ secrets.GITHUB_TOKEN }}
+            
+            - name: Set default milestone
+              uses: actions-ecosystem/action-set-milestone@v1
+              with:
+                milestone: "Frontend Development (Sprint 1)"
+                github-token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Add to default project
+              uses: actions-ecosystem/action-add-to-project@v1
+              with:
+                project-url: "https://github.com/orgs/OneWorldQuest/projects/3"
+                column-name: "Open To Start 🕒"
+                github-token: ${{ secrets.GITHUB_TOKEN }}

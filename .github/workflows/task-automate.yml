@@ -13,9 +13,9 @@ jobs:
               with:
                 labels: "task"
                 github-token: ${{ secrets.GITHUB_TOKEN }}
-            
-            - name: Set default milestone
-              uses: actions-ecosystem/action-set-milestone@v1
+
+            - name: Add to project
+              uses: actions/add-to-project@v1.0.2
               with:
-                milestone: "Frontend Development (Sprint 1)"
+                project-url: https://github.com/orgs/OneWorldQuest/projects/3
                 github-token: ${{ secrets.GITHUB_TOKEN }}

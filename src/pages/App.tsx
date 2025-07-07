@@ -1,8 +1,12 @@
 import {Link} from "react-router-dom"
 import './../styles/App.css'
+
+
 function App() {
     return (
         <>
+            <Header></Header>
+
             <h1>This is the home page!</h1>
             <h3>Check out some of the other pages here:</h3>
             <ul>

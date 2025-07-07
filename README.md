@@ -49,7 +49,10 @@ We welcome contributions from our team members. Please follow these steps:
 > ├── public/            # Static files \
 > ├── src/               # Source code \
 > │   ├── assets/        # Images, fonts, etc. \
-> │   └── App.tsx        # Main application component \
+> │   ├── components/    # Non-page tsx files: headers/cards \
+> │   ├── pages/         # Page tsx files for web-routing \
+> │   ├── styles/        # CSS files common location \
+> │   └── main.tsx       # Site entry point \
 > ├── .gitignore         # Git ignore rules \
 > ├── package.json       # Project dependencies \
 > ├── README.md          # This file \

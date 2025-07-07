@@ -1,3 +1,12 @@
+/**
+ * Renders header component
+ * 
+ * @description
+ * Creates global header for consistency.
+ * 
+ * @returns Header HTML
+ */
+
 function Header() {
     return (
         <>

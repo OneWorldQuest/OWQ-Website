@@ -1,3 +1,12 @@
+/**
+ * Renders a footer component
+ * 
+ * @description 
+ * Used on all pages for consistency. 
+ * 
+ * @returns Footer HTML
+ */
+
 function Footer() {
     return (
         <>

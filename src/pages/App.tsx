@@ -1,6 +1,5 @@
 import {Link} from "react-router-dom"
 import './../styles/App.css'
-
 function App() {
     return (
         <>
@@ -9,8 +8,9 @@ function App() {
             <ul>
                 <li><Link to={"/about"}><button>About Us</button></Link></li>
                 <li><Link to={"/programs"}><button>Programs</button></Link></li>
-                <li><Link to={"/get-involved"}><button>Involvement</button></Link></li>
+                <li><Link to={"/get-involved"}><button>Get Involved</button></Link></li>
             </ul>
+
         </>
     )
 }

@@ -1,4 +1,5 @@
 import logo from '../assets/one-world-logo-3Colors.svg';
+import '../styles/Header.css'
 
 function Header() {
     return (
@@ -17,7 +18,9 @@ function Header() {
                 
             </div>
             <div className = "bottom-header">
-                <div className="nav">Navbar</div>
+                <div className="nav">
+                    <a> Navbar:  </a>
+                </div>
             </div>
         </div>
         </>

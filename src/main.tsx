@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'
-import './styles/Header.css'
 import App from './pages/App.tsx'
 import AboutUs from './pages/AboutUsPage.tsx'
 import GetInvolved from './pages/GetInvolvedPage.tsx'

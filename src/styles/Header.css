@@ -1,10 +1,11 @@
 .top-header {
     display:flex;
-    align-items: center;
-    height: 70%;
+    align-items: center; /**/
+    height: 78%;
     width: auto;
 
-    /*background-color: white;  Remove this, this is temporary*/
+    /*background-color: black;  /*Remove this, this is temporary*/
+    /*border: 2px solid red;/**/
 
 }
 
@@ -16,9 +17,8 @@
 
     width: 370px;
     height: 140px;
-    margin-left: 60px;
 
-    /*background-color: rgb(0, 229, 88);*/
+    /*background-color: rgb(0, 229, 88);/**/
     
     border-radius: 8px;
 }
@@ -49,77 +49,64 @@
     align-items: center;
     justify-content: center;
 
-    width: 2%;
+    width: 10%;
     height: 50%;
 
-    font-size: 0;
+    font-size: 15px;
     
     /**/
-    background-color: rgb(8, 100, 0);
+    background-color: #337321;
 
     border-radius: 20px 0 0 20px;
 
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-
-    transition: 
-        width 1s ease-in-out,
-        transform 1s ease-in-out,
-        border-radius 1s ease-in-out, 
-        background-color 1s ease-in-out, 
-        font-size 1s ease-in-out;
-
-    overflow: hidden;
-}
-
-.donate-space:hover {
-    width: 10%;
-    transform: translateX(30px);
-    border-radius: 20px;
-    background-color:rgb(0, 223, 48);
     
-
-    font-size: 15px;
 }
 
 
 .donate-text {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-in-out 1s, visibility 0s linear 1s; 
-  white-space: nowrap; 
+   /* Add stuff here */
 }
 
 .donate-space:hover .donate-text {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
+    /* Add stuff here */
 }
 
 
 
 .bottom-header {
+
+    height: 22%;
+    width: auto;
+    /*background-color: #000000; /* Remove this, this is temporary*/
+}
+
+.nav {
+
     display:flex;
     align-items: center;
-    height: 30%;
+    gap: 20px;
+
     width: auto;
-    
+    height: 100%;
+
     margin-left: 105px;
-   
+    
+    /*justify-content: space-between; /**/
 
-    background-color: #00599C; /* Remove this, this is temporary*/
-
+    background-color: #00599C;
+    
 
     border-radius: 20px 0 0 20px;
 }
 
-.nav {
+.nav a {
+
+    font-size: 15px;
+    margin-left: 15px;
+
     color: white;
-    height: 45%;
-    width: auto;
-    margin-left: 50px;
-    
-    font-size: 30px; 
 }
+
     
 .Logo_OWQ {
     width: 100%;
@@ -131,7 +118,8 @@
 
 .Header {
 
-    height: 200px;
+    height: 180px;
     width: auto;
+    /*border: 2px solid red; /**/
 
 }

@@ -20,6 +20,11 @@ function Header() {
             <div className = "bottom-header">
                 <div className="nav">
                     <a> Navbar:  </a>
+                    <a> item1  </a>
+                    <a> item2  </a>
+                    <a> item3  </a>
+                    <a> item4  </a>
+                    <a> item5  </a>
                 </div>
             </div>
         </div>

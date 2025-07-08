@@ -1,3 +1,10 @@
+/**
+ * Main project entry file.
+ * 
+ * @description
+ * Functions as the entry into the website, additionally handles page routing.
+ */
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/index.css'

@@ -1,3 +1,12 @@
+/**
+ * Component file for the 'Get Involved' page.
+ * 
+ * @description
+ * Renders all necessities for the page.
+ * 
+ * @returns Page HTML + components
+ */
+
 import './../styles/GetInvolved.css'
 
 function GetInvolved() {

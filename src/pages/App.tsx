@@ -1,3 +1,12 @@
+/**
+ * Component file for the 'Home' page.
+ * 
+ * @description
+ * Renders all necessities for the page.
+ * 
+ * @returns Page HTML + components
+ */
+
 import {Link} from "react-router-dom"
 import './../styles/App.css'
 import Header from "./../components/Header.tsx"

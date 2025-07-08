@@ -1,3 +1,11 @@
+/**
+ * Renders header component
+ * 
+ * @description
+ * Creates global header for consistency.
+ * 
+ * @returns Header HTML
+ */
 import logo from '../assets/one-world-logo-3Colors.svg';
 import '../styles/Header.css'
 

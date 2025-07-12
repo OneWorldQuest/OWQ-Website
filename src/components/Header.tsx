@@ -6,12 +6,10 @@
  * 
  * @returns Header HTML
  */
-
 import logo from '../assets/one-world-logo-3Colors.svg';
 import '../styles/Header.css'
 
 function Header() {
-
     return (
         <>
         <div className = 'Header'>

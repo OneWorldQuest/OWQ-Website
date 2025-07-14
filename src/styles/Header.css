@@ -1,12 +1,12 @@
 /* To use variable to modify scaling things*/
 :root { 
-    --donate-scale: 1.5;
     --button-background-color: #337321;
 }
 
 .top-header {
     display:flex;
     align-items: center; 
+    position: relative;
     height: 70%;
     width: auto;
 }
@@ -48,6 +48,14 @@
 
 }
 
+.donate-border {
+    display: flex;
+    justify-content: flex-end;
+    width: 10%;
+    height:50%;
+
+}
+
 .donate-button {
 
     display:flex;
@@ -55,48 +63,45 @@
     align-items: center;
     
 
-    width: 10%;
-    height: 50%;
-
-    font-size: 15px;
+    width: 60%;
+    height: 100%;
     
     background-color: var(--button-background-color);
 
     border-radius: 20px 0 0 20px;
 
     position: relative;
-    top: 0;
-    left: 0;
 
     cursor: pointer;
-    transition: top 0.5s ease, transform 2s ease, left 2s ease;
+    transition: width 0.75s ease-in-out, background-color 0.75s ease-in-out;
 
 }
 
-.donate-button.moved {
-  top: 95px;
-  transform: scaleX(var(--donate-scale));
-  left: -32px;
+.donate-button:hover {
+
+  background-color: #27461f;
+  width:100%;
+  box-shadow: 0 0 10px rgba(47, 255, 0, 0.3);
+  
+}
+
+.donate-button:hover .donate-text {
+    color:white;
+    transition: color 2s ease;
 }
 
 .donate-background {
     margin-left: auto;
-    margin-right: 25%;
-
-    transition: margin-right 2s ease;
-}
-
-.donate-button.moved .donate-background {
-    margin-right: calc(25%/1.5);
+    margin-right: auto;
+    
 }
 
 .donate-text {
-  font-size: 18px;
-  transition: transform 2s ease;
-}
-
-.donate-button.moved .donate-text {
-    transform: scaleX(calc(1 / var(--donate-scale)));
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  transition: color 0.5s ease;
 }
 
 .bottom-header {

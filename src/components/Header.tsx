@@ -27,12 +27,12 @@ function Header() {
             </div>
             <div className = "bottom-header">
                 <div className="nav">
-                    <a> Navbar:  </a>
-                    <a> item1  </a>
-                    <a> item2  </a>
-                    <a> item3  </a>
-                    <a> item4  </a>
-                    <a> item5  </a>
+                    <ul>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About Us</a></li>
+                        <li><a href='#'>Programs</a></li>
+                        <li><a href='#'>Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

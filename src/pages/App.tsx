@@ -10,7 +10,9 @@
 import {Link} from "react-router-dom"
 import './../styles/App.css'
 import Header from "./../components/Header.tsx"
+import Footer from "../components/Footer.tsx"
 import IntroSection from "../components/IntroSection.tsx"
+
 
 function App() {
     return (
@@ -27,6 +29,8 @@ function App() {
                 <li><Link to={"/programs"}><button>Programs</button></Link></li>
                 <li><Link to={"/get-involved"}><button>Involvement</button></Link></li>
             </ul>
+
+            <Footer></Footer>
         </>
     )
 }

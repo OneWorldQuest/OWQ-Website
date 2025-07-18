@@ -23,7 +23,8 @@
 
 
 .upcoming-events {
-  background: linear-gradient(0deg,rgba(238, 238, 238, 1) 0%, rgba(0, 89, 156, 1) 100%);
+  /*background: linear-gradient(0deg,rgba(238, 238, 238, 1) 0%, rgba(0, 89, 156, 1) 100%);*/
+  background: rgba(0, 89, 156, 1);
   padding: 3rem 1.5rem;
   position: relative;          
   overflow: hidden;

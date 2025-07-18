@@ -1,3 +1,6 @@
+
+
+
 .intro-section {
   background: linear-gradient(0deg,rgba(4, 90, 161, 1) 30%, rgba(238, 238, 238, 1) 100%);
   padding: 3rem 1.5rem;
@@ -7,8 +10,7 @@
 }
 
 .intro-container {
-  display: flex;
-  align-items: flex-end;
+  
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
@@ -26,11 +28,11 @@
   border-radius: 1rem;
   max-width: 50%;
   margin-top: -100px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .intro-text-box h1 {
-  color: #2a7224; 
+  color: #337321; 
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -47,4 +49,6 @@
   right: -102px;
   object-fit: contain;
   z-index: 1;
+  
+  
 }

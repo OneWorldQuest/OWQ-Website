@@ -12,6 +12,8 @@ import './../styles/App.css'
 import Header from "./../components/Header.tsx"
 import Footer from "../components/Footer.tsx"
 import IntroSection from "../components/IntroSection.tsx"
+import UpcomingEvents from "../components/UpcomingEvents.tsx"
+
 
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
 
             <IntroSection></IntroSection>
 
+            {/*<img src="src/assets/teacher-kids-selfie.png" alt="Hero Image" className="events-image"/>*/}
+            
+            <UpcomingEvents></UpcomingEvents>
             <h1>This is the home page!</h1>
             <h3>Check out some of the other pages here:</h3>
             <ul>

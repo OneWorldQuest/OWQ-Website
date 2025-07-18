@@ -6,12 +6,12 @@
  * 
  * @returns Header HTML
  */
-import { useState } from 'react';
+
 import logo from '../assets/one-world-logo-3Colors.svg';
 import '../styles/Header.css'
 
 function Header() {
-    const [hovered, setHovered] = useState(false);
+
     return (
         <>
         <div className = 'Header'>
@@ -22,11 +22,14 @@ function Header() {
                 <div className = "searchbar-space">
                     <h1>Search Pages...</h1> {/* this is a place holder for the searchbar component */}
                 </div>
-                <button className={`donate-button ${hovered ? 'moved' : ''}`} onMouseEnter={() => setHovered(true)}>
-                    <div className="donate-background">
-                        <h1 className="donate-text">Donate</h1>
-                    </div>
-                </button>
+                <div className = "donate-border">
+                    <button className='donate-button'>
+                        <div className="donate-background">
+                            <h1 className="donate-text">DONATE</h1>
+                        </div>
+                    </button>
+                </div>
+                
                 
             </div>
             <div className = "bottom-header">

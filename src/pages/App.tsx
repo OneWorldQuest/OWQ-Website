@@ -50,8 +50,6 @@ function App() {
                 <li><Link to={"/programs"}><button>Programs</button></Link></li>
                 <li><Link to={"/get-involved"}><button>Involvement</button></Link></li>
             </ul>
-
-            <Footer></Footer>
         </>
     )
 }

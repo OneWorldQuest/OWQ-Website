@@ -6,10 +6,12 @@
  * 
  * @returns Header HTML
  */
+
 import logo from '../assets/one-world-logo-3Colors.svg';
 import '../styles/Header.css'
 
 function Header() {
+
     return (
         <>
         <div className = 'Header'>
@@ -20,9 +22,14 @@ function Header() {
                 <div className = "searchbar-space">
                     <h1>Search Pages...</h1> {/* this is a place holder for the searchbar component */}
                 </div>
-                <button className = "donate-space">
-                    <h1 className='Donate-text'>Donate</h1> {/* this is a place holder for the donate component button */}
-                </button>
+                <div className = "donate-border">
+                    <button className='donate-button'>
+                        <div className="donate-background">
+                            <h1 className="donate-text">DONATE</h1>
+                        </div>
+                    </button>
+                </div>
+                
                 
             </div>
             <div className = "bottom-header">

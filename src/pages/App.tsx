@@ -9,7 +9,6 @@
 
 import {Link} from "react-router-dom"
 import './../styles/App.css'
-import Header from "./../components/Header.tsx"
 import IntroSection from "../components/IntroSection.tsx"
 import UpcomingEvents from "../components/UpcomingEvents.tsx"
 import OurImpact from "../components/OurImpact.tsx"
@@ -17,8 +16,6 @@ import OurImpact from "../components/OurImpact.tsx"
 function App() {
     return (
         <>
-           
-            <Header></Header>
 
             <IntroSection></IntroSection>
             

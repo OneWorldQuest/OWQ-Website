@@ -9,7 +9,6 @@
 
 import {Link} from "react-router-dom"
 import './../styles/App.css'
-import Header from "./../components/Header.tsx"
 import IntroSection from "../components/IntroSection.tsx"
 import UpcomingEvents from "../components/UpcomingEvents.tsx"
 

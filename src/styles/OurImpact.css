@@ -1,0 +1,133 @@
+.impact-section {
+background: linear-gradient(3deg,rgba(0, 89, 156, 1) 0%, rgba(238, 238, 238, 1) 44%, rgba(32, 97, 19, 1) 86%);  overflow: hidden;
+  height: 1100px;
+}
+
+
+.our-impact-text {
+  color:#EEEEEE;
+  font-weight: bold;
+  position: relative;
+  left: 50px;
+  bottom: -190px;
+  font-size: 4rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.youth-icon {
+    position: relative;
+    left: 50px;
+    bottom: -257px;
+    height: 90px;
+
+}
+
+.youth-trained-text {
+  color:#000000;
+  font-weight: 600;
+  position: relative;
+  left: 160px;
+  bottom: -220px;
+  font-size: 2rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.number-trained-text {
+  color:#000000;
+  font-weight: 600;
+  position: relative;
+  left: 158px;
+  bottom: -125px;
+  font-size: 3rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.clock-icon {
+    position: relative;
+    left: 490px;
+    bottom: -72px;
+    height: 90px;
+}
+
+.computer-icon {
+    position: relative;
+    left: 900px;
+    bottom: -72px;
+    height: 90px;
+}
+
+.our-impact-image {
+  position: absolute;
+  left:50px;
+  bottom:45px;
+  width:560px;
+  height:580px;
+  z-index: 2;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-box {
+  position: absolute;
+  left:600px;
+  bottom:455px;
+  width:710px;
+  height:150px;
+  z-index: 1;
+  background: #00599C;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-box h1 {
+  color: #1c1c1c; 
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 20px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stats-box p {
+  color: #222;
+  font-size: .9rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 4rem;
+  font-weight: 200;
+  position: relative;
+  bottom: 0.2rem;
+
+}
+
+.statistics-circle {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  left: 1230px;
+  bottom: -7.5rem;
+  border-radius: 50%;
+  background-color: #337321;
+  border: 5px solid #ffc107;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.divider {
+  border-top: solid 6px #EEEEEE;
+  width: 200px;
+  position: relative;
+  left: 0px;
+  bottom: 11px;
+  border-radius: 1rem;
+  z-index: 2;
+}

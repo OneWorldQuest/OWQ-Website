@@ -10,7 +10,7 @@ import '../styles/IntroSection.css'
 function IntroSection() {
   return (
 
-    <div className="divider">
+   
     <section className="intro-section">
       <div className="intro-container">
         <div className="intro-text-box">
@@ -31,7 +31,7 @@ function IntroSection() {
         />
       </div>
     </section>
-    </div>
+    
   );
 
 }

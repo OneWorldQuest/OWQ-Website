@@ -4,6 +4,7 @@
  * @description 
  * Just on the landing page as the user opens the website 
  */
+import {Link} from "react-router-dom"
 
 import '../styles/UpcomingEvents.css'
 
@@ -25,23 +26,14 @@ function UpcomingEvents() {
           </p>
         </div>
         
-        
+      <button className="events-green-box">Sign Up Now!</button>
 
-
-        <button className="events-green-box">
-        Sign Up Now!
-        </button>
-
-        <div className="programs-box">
-            <p>
-                More about our programs!
-            </p>
-        </div>
+    <li><Link to={"/programs"}>
+        <button className="programs-box"><p>More about our programs!</p></button>
+    </Link></li>
 
          <div className="our-programs">
-            <p>
-                Our Programs 
-            </p>
+            <p>Our Programs</p>
         </div>
 
         <div className="divider1"></div>
@@ -83,7 +75,7 @@ function UpcomingEvents() {
       </div>
     </div>
 
-        
+    
 
       </div>
     </section>

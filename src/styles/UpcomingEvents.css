@@ -54,17 +54,20 @@
   max-width: 50%;
   margin-top: -193px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .events-text-box h1 {
   color: #337321; 
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .events-text-box p {
   color: #222;
   line-height: 1.5;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .events-image {
@@ -94,6 +97,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .events-green-box:hover {
@@ -110,11 +114,18 @@
   bottom: -100px;
   border-radius: 1rem;
   font-size: 2rem;
-  font-weight: bold;
-  padding: 1.2rem 2.3rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  padding-right: 118px;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.programs-box:hover {
+  background-color: #25641e;
 }
 
 .our-programs{
@@ -124,6 +135,8 @@
   left: -852px;
   bottom: -130px;
   font-size: 4rem;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .info-card {

@@ -5,6 +5,7 @@
  * Just on the landing page as the user opens the website 
  */
 
+import Programs_Section_Card from './Progams_Section_card';
 import '../styles/UpcomingEvents.css'
 
 function UpcomingEvents() {
@@ -47,41 +48,25 @@ function UpcomingEvents() {
         <div className="divider1"></div>
         <div className="divider2"></div>
 
-        <div className="info-card">
-      <div className="card-image">image</div>
-      <div className="card-text">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nulla efficitur viverra sollicitudin. Donec dictum eget 
-        ipsum eget fringilla. Lorem ipsum dolor sit amet, consectetur
-         adipiscing elit. Nulla efficitur viverra.
-        </p>
-      </div>
-    </div>
-
-    <div className="info-card2">
-      <div className="card-image">image</div>
-      <div className="card-text">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nulla efficitur viverra sollicitudin. Donec dictum eget 
-        ipsum eget fringilla. Lorem ipsum dolor sit amet, consectetur
-         adipiscing elit. Nulla efficitur viverra.
-        </p>
-      </div>
-    </div>
-
-    <div className="info-card3">
-      <div className="card-image">image</div>
-      <div className="card-text">
-        <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Nulla efficitur viverra sollicitudin. Donec dictum eget 
-        ipsum eget fringilla. Lorem ipsum dolor sit amet, consectetur
-         adipiscing elit. Nulla efficitur viverra.
-        </p>
-      </div>
-    </div>
+        <div className='info-cards'>
+          <Programs_Section_Card
+            image = "../assets/teacher-kids-selfie.png"
+            info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur viverra sollicitudin."
+            link = "programs"
+          />
+          <Programs_Section_Card
+            image = "https://via.placeholder.com/300x180"
+            info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur viverra sollicitudin."
+            link = "programs"
+          />
+          <Programs_Section_Card
+            image = "https://via.placeholder.com/300x180"
+            info = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla efficitur viverra sollicitudin."
+            link = "programs"
+          />
+          
+        </div>
+      
 
         
 

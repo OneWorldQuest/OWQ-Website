@@ -1,0 +1,34 @@
+.program-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 450px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-family: 'Inter', sans-serif;
+}
+
+.program-image {
+  width:auto;
+  height:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-p {
+  width: auto;
+  height:25%;
+  display: flex;
+  margin-left:2%;
+}
+
+.program-link {
+  width:auto;
+  height:5%;
+  margin-left:60%;
+  
+}

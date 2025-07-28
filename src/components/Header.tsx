@@ -6,10 +6,13 @@
  * 
  * @returns Header HTML
  */
+
 import logo from '../assets/one-world-logo-3Colors.svg';
 import '../styles/Header.css'
+import {NavLink} from 'react-router-dom'
 
 function Header() {
+
     return (
         <>
         <div className = 'Header'>
@@ -23,7 +26,7 @@ function Header() {
                 <div className = "donate-border">
                     <button className='donate-button'>
                         <div className="donate-background">
-                            <h1 className="donate-text">DONATE</h1>
+                          <h1 className="donate-text">donate</h1>
                         </div>
                     </button>
                 </div>
@@ -32,12 +35,12 @@ function Header() {
             </div>
             <div className = "bottom-header">
                 <div className="nav">
-                    <a> Navbar:  </a>
-                    <a> item1  </a>
-                    <a> item2  </a>
-                    <a> item3  </a>
-                    <a> item4  </a>
-                    <a> item5  </a>
+                    <ul>
+                        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
+                        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About Us</NavLink>
+                        <NavLink to="/programs" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Programs</NavLink>
+                        <NavLink to="/get-involved" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Get Involved</NavLink>
+                    </ul>
                 </div>
             </div>
         </div>

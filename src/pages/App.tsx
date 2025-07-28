@@ -13,6 +13,7 @@ import IntroSection from "../components/IntroSection.tsx"
 import UpcomingEvents from "../components/UpcomingEvents.tsx"
 import OurImpact from "../components/OurImpact.tsx"
 
+
 function App() {
     return (
         <>

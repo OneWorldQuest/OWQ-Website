@@ -33,7 +33,9 @@ function Footer() {
         {/* Left: Logo + Org Info */}
         <div className="footer-left">
           <div className="footer-logo">
-            <img src={OneWorldLogo} alt="One World Quest Logo" style={{borderRadius: '30%'}} />
+            <a href="#">
+              <img src={OneWorldLogo} alt="One World Quest Logo" style={{borderRadius: '30%'}} />
+            </a>
           </div>
           <p className="org-description">
             Dedicated to fostering positive change in the community, the organization is committed to bringing technology skills and education to ALL communities. Support is essential to this vital work. Join us to make a difference.

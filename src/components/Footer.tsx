@@ -12,10 +12,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 import { FaInstagram, FaFacebookF, FaWhatsapp, FaEnvelope } from "react-icons/fa";
-import OneWorldLogo from "../assets/one-world-logo-3Colors.svg"; // Adjust path if needed
+import OneWorldLogo from "../assets/OWQPictureLogoSmall.png"; // Adjust path if needed
 
 function Footer() {
-  const [selectedAmount, setSelectedAmount] = useState(null);
+  const [selectedAmount, setSelectedAmount] = useState(5);
   const donationAmounts = [500, 200, 100, 50, 10]; // USD
 
   return (
@@ -33,12 +33,15 @@ function Footer() {
         {/* Left: Logo + Org Info */}
         <div className="footer-left">
           <div className="footer-logo">
-            <img src={OneWorldLogo} alt="One World Quest Logo" />
+            <a href="#">
+              <img src={OneWorldLogo} alt="One World Quest Logo" style={{borderRadius: '30%'}} />
+            </a>
           </div>
           <p className="org-description">
-            One World Quest is a global non-profit focused on empowering communities through education,
-            sustainability, and compassion. Join us in making a difference.
+            Dedicated to fostering positive change in the community, the organization is committed to bringing technology skills and education to ALL communities. Support is essential to this vital work. Join us to make a difference.
           </p>
+          <div className="spacer"></div>
+          <h3>Proud partners of University of Colorado, Colorado Springs</h3>
         </div>
 
         {/* Right: Donation Box */}

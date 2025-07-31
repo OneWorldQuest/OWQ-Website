@@ -26,7 +26,7 @@ function Header() {
                 <div className = "donate-border">
                     <button className='donate-button'>
                         <div className="donate-background">
-                            <h1 className="donate-text">donate</h1>
+                          <h1 className="donate-text">donate</h1>
                         </div>
                     </button>
                 </div>

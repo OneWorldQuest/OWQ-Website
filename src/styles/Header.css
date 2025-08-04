@@ -9,6 +9,8 @@
     position: relative;
     height: 70%;
     width: auto;
+
+
 }
 
 .logo-space {
@@ -32,7 +34,7 @@
     width: 370px;
     height: 30%;
     margin-left: auto;
-    margin-top: 40px;
+
     margin-right: clamp(20px, 3vw, 80px);
 
     

@@ -15,12 +15,12 @@
 }
 
 .search-input:hover {
-    border-color: #2a75f3;
+    border-color: #00599C;
     background-color: #ffffff;
 }
 
 .search-input:focus {
-    border-color: #00eeff;
+    border-color: #337321;
     outline:none;
     background-color: #f9f9f9;
 

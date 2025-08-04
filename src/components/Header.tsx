@@ -10,6 +10,7 @@
 import logo from '../assets/one-world-logo-3Colors.svg';
 import '../styles/Header.css'
 import {NavLink} from 'react-router-dom'
+import Searchbar from './Searchbar';
 
 function Header() {
 
@@ -21,7 +22,7 @@ function Header() {
                     <img src = {logo} alt = 'OWQ-Logo' className = 'Logo_OWQ'/>
                 </div>
                 <div className = "searchbar-space">
-                    <h1>Search Pages...</h1> {/* this is a place holder for the searchbar component */}
+                    <Searchbar/> 
                 </div>
                 <div className = "donate-border">
                     <button className='donate-button'>

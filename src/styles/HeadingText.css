@@ -1,0 +1,52 @@
+.headingtext-container {
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 1.25rem;
+  padding-left: 2rem;
+  font-family: sans-serif;
+}
+
+/* Main heading */
+.nameheading-in-heading-text {
+  color: #fefeff;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Paragraph */
+.headingtext-paragraph {
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .nameheading-in-heading-text {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .headingtext-paragraph {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .headingtext-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+    .headingtext-container{
+    margin:0px;
+    padding: 0px;
+  }
+  .nameheading-in-heading-text {
+    font-size: 1.3rem;
+  }
+
+  .headingtext-paragraph {
+    font-size: 0.9rem;
+  }
+}

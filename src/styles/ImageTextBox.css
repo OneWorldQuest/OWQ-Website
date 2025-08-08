@@ -2,7 +2,8 @@
 .image-textbox-container {
   position: relative;
   max-width: 1000px;
-  width: 80%;
+  height: 600px;
+  /* width: 80%; */
   padding: 20px;
   margin: 0px auto;
   margin-top : 2%;
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .image-textbox-container.animate-in {
@@ -33,7 +35,8 @@
   display: block;
   object-fit: cover;
   transition: transform 0.8s ease;
-  border-radius: 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Image Animations */
@@ -54,10 +57,13 @@
   max-width: 60%;
   background: white;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   font-family: sans-serif;
   transition: transform 0.8s ease, opacity 0.8s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.text-box-heading-in-itb{
+  font-size:45px;
 }
 
 .text-overlay h2 {
@@ -79,10 +85,10 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .text-overlay {
     position: static;
-    max-width: 90%;
+    max-width: 100%;
     margin: 20px 0 0;
     padding: 16px;
     box-shadow: none;
@@ -101,6 +107,10 @@
   .text-overlay p {
     font-size: 0.95rem;
   }
+  .text-box-heading-in-itb{
+    font-size:35px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -115,4 +125,8 @@
   .text-overlay p {
     font-size: 0.9rem;
   }
+  .text-box-heading-in-itb{
+    font-size:25px;
+  }
 }
+

@@ -8,7 +8,7 @@
  */
 
 import '../styles/ProgramFilters.css'
-import { FaCaretDown, FaCaretUp } from 'react-icons/fa';
+import { FaCaretDown } from 'react-icons/fa';
 
 function ProgramFilter() {
 
@@ -45,7 +45,7 @@ function ProgramFilter() {
                     <div className='selector' id='language-dropdown'>
                         {languageOptions.map((language, index) => (
                             <div key={index} className='language-option'>
-                                {language} <FaCaretDown/>
+                                {language} <FaCaretDown className='caret-icon'/>
                             </div>
                         ))}
                     </div>

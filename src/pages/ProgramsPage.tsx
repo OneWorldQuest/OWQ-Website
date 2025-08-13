@@ -13,7 +13,6 @@ import ProgramFilter from '../components/ProgramFilters'
 function Programs() {
     return (
         <>
-            <p className="homeContent">This is the Programs content file</p>
             <ProgramFilter></ProgramFilter>
         </>
     )

@@ -41,8 +41,8 @@
 .selector {
     height: 95%;
     background-color: #00599C;
-    border: 2px solid #003964;
-    border-radius: 10px;
+    border: 2px solid #00599C;
+    border-radius: 20px;
 
     display: flex;
     flex-direction: row;

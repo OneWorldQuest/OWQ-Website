@@ -9,11 +9,14 @@
 
 import './../styles/Programs.css'
 import ProgramFilter from '../components/ProgramFilters'
+import CardSpaceProgram from '../components/CardSpaceProgram'
 
 function Programs() {
     return (
         <>
             <ProgramFilter></ProgramFilter>
+            <CardSpaceProgram/>
+
         </>
     )
 }

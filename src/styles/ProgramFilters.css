@@ -110,3 +110,12 @@
 .subject-option:last-child {
     margin-right:40%;
 }
+
+.card-space {
+    width: auto;
+    height: 400px;
+    background-color: red;
+
+    margin-left: 5%;
+    margin-right: 5%;
+}

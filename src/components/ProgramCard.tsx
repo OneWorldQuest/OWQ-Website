@@ -7,7 +7,7 @@
  * @returns Filter HTML
  */
 
-import '../styles/ProgramFilters.css'
+import '../styles/ProgramCard.css'
 
 type ProgramCardProps = {
     image: string;

@@ -1,0 +1,47 @@
+.card-program {
+    width:95%;
+    height: 95%;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-head {
+    width:100%;
+    height: 50%;
+
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    /*background-color: rgb(237, 237, 237); /***/
+}
+
+.card-body {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.card-tail {
+    width: 100%;
+    height: 15%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn-more-btn {
+    color:white;
+    background-color: black;
+}
+
+.enroll-btn {
+    color:white;
+    background-color: black;
+}

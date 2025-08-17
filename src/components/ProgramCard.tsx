@@ -12,21 +12,30 @@ import '../styles/ProgramCard.css'
 type ProgramCardProps = {
     image: string;
     title: string;
-    age: 'All Ages' | 'Kids 6-10' | 'Teens 11-17' | "Adults" | string;
+    age: 'All Ages' | 'Kids 7-13' | "Adults" | string;
     subject: 'All' | 'Coding' | 'Robotics' | 'Other' | string;
+
+    imageFit?: 'cover' | 'contain';
+    imagePosition?: string;
+    imageRatio?: `${number} / ${number}`
 }
 
-function ProgramCard({image, title, age, subject}: ProgramCardProps) {
+function ProgramCard({image, title, age, subject, imageFit = 'cover', imagePosition = 'center', imageRatio = '16 / 9',}: ProgramCardProps) {
+
 
 
     return (
         <div className='card-program'>
-            <div className='card-head'>
+            <div className='card-head' style={{ aspectRatio: imageRatio }}>
                 <img
                     src={image}
                     alt = {title}
                     className='card-image'
                     loading='lazy'
+                    style={{
+                        objectFit: imageFit,
+                        objectPosition: imagePosition,
+                    }}  
                 />
             </div>
             <div className='card-body'>

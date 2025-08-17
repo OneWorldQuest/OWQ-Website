@@ -64,8 +64,7 @@ function ProgramFilter({value, onChange }: Props ) {
 
     const isAgeActive = (v: AgeGroup) => value.age === v;
     const isLangActive = (_v: Language) => false;
-    const isSubjActive = (v: Subject | 'all') => v !== 'all' && value.subjects.includes(v as Subject);
-
+    const isSubjActive = (v: Subject | 'all') => v === 'all' ?  value.subjects.length === 0: value.subjects.includes(v as Subject);
     return (
         <div className='filter-space'>
             <div className='top'>

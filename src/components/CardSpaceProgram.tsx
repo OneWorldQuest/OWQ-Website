@@ -18,6 +18,10 @@ type Program = {
     age: AgeGroup;
     subject: Subject;
 
+    imageFit?: 'cover' | 'contain';
+    imagePosition?: string;
+    imageRatio?: `${number} / ${number}`;
+
 };
 
 function CardSpaceProgram( {items}: {items: Program[]}) {
@@ -41,6 +45,9 @@ function CardSpaceProgram( {items}: {items: Program[]}) {
                             : p.subject === 'robotics' ? 'Robotics'
                             : 'Other'
                         }
+                        imageFit={p.imageFit}
+                        imagePosition={p.imagePosition}
+                        imageRatio={p.imageRatio}
                     />
                 ))}
             </div>

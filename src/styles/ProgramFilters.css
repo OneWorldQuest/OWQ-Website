@@ -21,6 +21,8 @@
     align-items: end;
     
 }
+
+
 .right {
     width:50%;
     padding-right: 2.85%;
@@ -67,6 +69,10 @@
     transform: scale(1.1);
 }
 
+.age-option.active {
+    color: gold;
+}
+
 #language-dropdown {
     width: 40%;
 }
@@ -99,6 +105,15 @@
 .subject-option {
     cursor: pointer;
     font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.subject-option:hover {
+    transform: scale(1.1);
+}
+
+.subject-option.active {
+    color: #EDB512;
 }
 
 

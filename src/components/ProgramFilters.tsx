@@ -8,64 +8,63 @@
  */
 
 import '../styles/ProgramFilters.css'
+import { AGE_GROUPS, LANGUAGES, SUBJECTS, type AgeGroup, type Language, type Subject } from '../constants/ProgramOptions';
 import { FaCaretDown } from 'react-icons/fa';
 
 type Criteria = {
-    age: 'all' | '6-10' | '11-17' | 'adult';
-    language: 'en' | 'en' | 'fr';
-    subjects: string[];
+    age: AgeGroup;
+    language: Language;
+    subjects: Subject[];
 };
 
 type Props = {
     value: Criteria;
-    onChange: (next:Criteria) => void;
+    onChange: React.Dispatch<React.SetStateAction<Criteria>>;
 };
 
 function ProgramFilter({value, onChange }: Props ) {
 
-    const ageOptions = ['All Ages', 'Kids 6-10', 'Teens 11-17', 'Adults'];
-    const languageOptions = ['EN', 'EN', "FR"];
-    const subjectOptions = ["All", 'Coding', 'Robotics', 'Other'];
+    const ageOptions: {value: AgeGroup; label: string}[] = [
+        {value: AGE_GROUPS.ALL.value, label: AGE_GROUPS.ALL.label},
+        {value: AGE_GROUPS.SEVEN_TO_THIRTEEN.value, label: AGE_GROUPS.SEVEN_TO_THIRTEEN.label},
+        {value: AGE_GROUPS.ADULT.value, label: AGE_GROUPS.ADULT.label},
+    ];
 
-    const ageVal = (label: typeof ageOptions[number]): Criteria['age'] =>
-        label === 'All Ages' ? 'all'
-        : label === 'Kids 6-10' ? '6-10'
-        : label === 'Teens 11-17' ? '11-17'
-        : 'adult';
+    const languageOptions: {value: Language; label: string}[] = [
+        {value: LANGUAGES.EN.value, label: LANGUAGES.EN.label},
+        {value: LANGUAGES.FR.value, label: LANGUAGES.FR.label},
+    ];
 
-    const langVal = (label:typeof languageOptions[number]): Criteria['language'] =>
-        label.toLowerCase() as Criteria['language'];
+    const subjectOptions: {value: Subject | 'all'; label: string}[] = [
+        {value: 'all', label: SUBJECTS.ALL.label},
+        {value: SUBJECTS.CODING.value, label: SUBJECTS.CODING.label},
+        {value: SUBJECTS.ROBOTICS.value, label: SUBJECTS.ROBOTICS.label},
+        {value: SUBJECTS.OTHER.value, label: SUBJECTS.OTHER.label},
+    ];
 
-    const subjVal = (label: typeof subjectOptions[number]) =>
-        label === 'All' ? 'all' : label.toLowerCase();
-
-    const onAgeClick = (label: typeof ageOptions[number]) => {
-        const v = ageVal(label);
-        onChange({...value, age: value.age === v ? 'all' : v});
+    const onAgeClick = (v: AgeGroup) => {
+        onChange(prev => ({...prev, age: prev.age === v ? 'all': v}))
     };
 
-    const onSubjectClick = (label: typeof subjectOptions[number]) => {
-        const v = subjVal(label);
+    const onSubjectClick = (v: Subject | 'all') => {
         if (v==='all') {
-            onChange({...value, subjects: []});
+            onChange(prev => ({...prev, subjects: []}));
             return;
         }
-        const set = new Set(value.subjects);
-        set.has(v) ? set.delete(v): set.add(v);
-        onChange({...value, subjects: Array.from(set) });
+        onChange(prev => {
+            const set = new Set(prev.subjects);
+            set.has(v) ? set.delete(v) : set.add(v);
+            return {...prev, subjects: Array.from(set) };
+        });
     };
 
-    const onLangClick = (label: typeof languageOptions[number]) => {
-        const v = langVal(label);
-        onChange({...value, language: value.language === v ? 'en' : v});
+    const onLangClick = (_v: Language) => {
+
     };
 
-    const isAgeActive = (label: typeof ageOptions[number]) => value.age === ageVal(label);
-    const isLangActive = (label: typeof languageOptions[number]) => value.language === langVal(label);
-    const isSubjActive = (label: typeof subjectOptions[number]) => {
-        const v = subjVal(label);
-        return v !== 'all' && value.subjects.includes(v);
-        }
+    const isAgeActive = (v: AgeGroup) => value.age === v;
+    const isLangActive = (_v: Language) => false;
+    const isSubjActive = (v: Subject | 'all') => v !== 'all' && value.subjects.includes(v as Subject);
 
     return (
         <div className='filter-space'>
@@ -84,9 +83,9 @@ function ProgramFilter({value, onChange }: Props ) {
 
                 <div className='left'>
                     <div className='selector' id='age'>
-                        {ageOptions.map((age, index) => (
-                            <div key={index} className= {`age-option ${isAgeActive(age) ? 'active' : ''}`} onClick = {() => onAgeClick(age)}>
-                                {age}
+                        {ageOptions.map(opt => (
+                            <div key={opt.value} className= {`age-option ${isAgeActive(opt.value) ? 'active' : ''}`} onClick = {() => onAgeClick(opt.value)}>
+                                {opt.label}
                             </div>
                         ))}
                     </div>
@@ -94,9 +93,9 @@ function ProgramFilter({value, onChange }: Props ) {
 
                 <div className='right'>
                     <div className='selector' id='language-dropdown'>
-                        {languageOptions.map((language, index) => (
-                            <div key={index} className={`language-option ${isLangActive(language) ? 'active' : ''}`} onClick = {() => onLangClick(language)}>
-                                {language} <FaCaretDown className='caret-icon'/>
+                        {languageOptions.map(opt => (
+                            <div key={opt.value} className={`language-option ${isLangActive(opt.value) ? 'active' : ''}`} onClick = {() => onLangClick(opt.value)}>
+                                {opt.label} <FaCaretDown className='caret-icon'/>
                             </div>
                         ))}
                     </div>
@@ -104,9 +103,9 @@ function ProgramFilter({value, onChange }: Props ) {
 
             </div>
             <div className='bottom'>
-                {subjectOptions.map((subject, index) => (
-                    <div key={index} className={`subject-option ${isSubjActive(subject) ? 'active' : ''}`} onClick = {() => onSubjectClick(subject)}>
-                        [{subject}]
+                {subjectOptions.map(opt => (
+                    <div key={opt.value} className={`subject-option ${isSubjActive(opt.value) ? 'active' : ''}`} onClick = {() => onSubjectClick(opt.value)}>
+                        [{opt.label}]
                     </div>
                 ))}
             </div>

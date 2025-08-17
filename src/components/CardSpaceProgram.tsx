@@ -7,6 +7,7 @@
  * @returns Filter HTML
  */
 
+import type { AgeGroup, Subject } from '../constants/ProgramOptions';
 import ProgramCard from './ProgramCard'
 import '../styles/CardSpaceProgram.css'
 
@@ -14,8 +15,8 @@ type Program = {
     id:string;
     image:string;
     title: string;
-    age: '6-10' | '11-17' | 'adult' | 'all';
-    subject: 'coding' | 'robotics' | 'other';
+    age: AgeGroup;
+    subject: Subject;
 
 };
 
@@ -31,8 +32,7 @@ function CardSpaceProgram( {items}: {items: Program[]}) {
                         image={p.image}
                         title={p.title}
                         age = {
-                            p.age === '6-10' ? 'Kids 6-10'
-                            : p.age === '11-17' ? 'Teens 11-17'
+                            p.age === '7-13' ? 'Kids 7-13'
                             : p.age === 'adult' ? 'Adults'
                             : 'All Ages'
                         }

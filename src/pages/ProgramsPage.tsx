@@ -28,17 +28,17 @@ type Criteria = {
 };
 
 const ALL_PROGRAMS: Program[] = [ // This is where we make cards manually could eventually use json for this
-    {id: '1', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: 'all', subject: 'coding', language: 'en'},
+    {id: '1', image: '../src/assets/robotic.png', title: 'Program Title', age: 'all', subject: 'coding', language: 'en'},
     {id: '2', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: 'adult', subject: 'coding', language: 'en'},
     {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '6-10', subject: 'other', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
-    {id: '3', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '4', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '6-10', subject: 'other', language: 'en'},
+    {id: '5', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '6', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '7', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '8', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '9', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '10', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
+    {id: '11', image: '../src/assets/one-world-logo-3Colors.svg', title: 'Program Title', age: '11-17', subject: 'robotics', language: 'en'},
 ];
 
 function Programs() {

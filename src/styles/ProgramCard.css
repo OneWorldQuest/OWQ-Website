@@ -1,31 +1,46 @@
 .card-program {
-    width:95%;
-    height: 95%;
-    background-color: blue;
+    width:93%;
+
 
     display: flex;
     flex-direction: column;
+
 
 }
 
 .card-head {
     width:100%;
-    height: 50%;
+    height: 53%;
 
 }
 
 .card-image {
     width: 100%;
     height: 100%;
-    /*background-color: rgb(237, 237, 237); /***/
+    object-fit: cover;
+    border-radius: 12px;
+    background-color: black;
 }
 
 .card-body {
     width: 100%;
-    height: 25%;
+    height: 32%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+
+
+}
+.program-title {
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.spans {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
 
 .card-tail {
@@ -34,14 +49,38 @@
 
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+
 }
 
 .learn-more-btn {
     color:white;
-    background-color: black;
+    width: 33.5%;
+    background-color: #337321;
+    border-radius: 6px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #27461F;
+    color: gold;
 }
 
 .enroll-btn {
     color:white;
-    background-color: black;
+    width:32.5%;
+    background-color: #00599C;
+    border-radius: 6px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.enroll-btn:hover {
+    background-color: #0D3D61;
+    color:gold;
 }

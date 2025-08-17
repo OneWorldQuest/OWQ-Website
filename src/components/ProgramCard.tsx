@@ -30,9 +30,11 @@ function ProgramCard({image, title, age, subject}: ProgramCardProps) {
                 />
             </div>
             <div className='card-body'>
-                <h3 className='program-title'>{title}</h3>
-                <span className='age-subject'>{age}</span>
-                <span className='age-subject'>{subject}</span>
+                <h2 className='program-title'>{title}</h2>
+                <div className='spans'>
+                    <span className='age-subject'>Age Group: {age}</span>
+                    <span className='age-subject'>Subject: {subject}</span>
+                </div>
             </div>
             <div className='card-tail'>
                 <div className='learn-more-btn'>Learn More</div>

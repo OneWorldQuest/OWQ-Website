@@ -2,7 +2,7 @@ import "./../styles/ImageTextBox.css"
 import { useEffect, useRef, useState } from 'react';
 
 
-function ImageTextBox({ image, text }) {
+function ImageTextBox({ image,heading='Heading', text }) {
   const containerRef = useRef(null);
   const [inView, setInView] = useState(false);
 
@@ -12,7 +12,7 @@ function ImageTextBox({ image, text }) {
         setInView(entry.isIntersecting);
       },
       {
-        threshold: 0.2, // Trigger when 20% is visible
+        threshold: 0.2,
       }
     );
 
@@ -27,7 +27,7 @@ function ImageTextBox({ image, text }) {
       <img src={image} alt="Banner" className={`main-image ${inView ? 'slide-in-left' : 'slide-out-left'}`} />
       {text && (
         <div className={`text-overlay ${inView ? 'slide-in-right' : 'slide-out-right'}`}>
-          <h2>What we are all about...</h2>
+          <h1 className="text-box-heading-in-itb">{heading}</h1>
           <p>{text}</p>
         </div>
       )}

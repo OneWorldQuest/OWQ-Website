@@ -1,0 +1,66 @@
+.cta-container {
+  background-color: #0a66c2;
+  border-radius: 16px;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+
+.cta-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.cta-button.yellow {
+  background-color: #FFDB6E  ;
+}
+
+.cta-button.green {
+  background-color: #337321;
+  border: 1px solid white;
+  color: white;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cta-heading {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

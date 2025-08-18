@@ -21,18 +21,18 @@
 
 /* Color themes */
 .stat-blue {
-  background-color: #190f50;
+  background-color: #0D3D61;
   color: white;
 }
 
 .stat-lightblue {
-  background-color: #3cd50e;
-  color: #003366;
+  background-color: white;
+  color: black;
 }
 
 .stat-green {
-  background-color: #f0fce9;
-  color: #3e7f42;
+  background-color: #27461F;
+  color: white;
 }
 
 .stat-number {

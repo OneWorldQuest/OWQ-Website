@@ -31,15 +31,17 @@
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: #003366;
+  color: black;
 }
 
 .cta-button.yellow {
-  background-color: #fdd835;
+  background-color: #FFDB6E  ;
 }
 
 .cta-button.green {
-  background-color: #aed581;
+  background-color: #337321;
+  border: 1px solid white;
+  color: white;
 }
 
 .cta-button:hover {
